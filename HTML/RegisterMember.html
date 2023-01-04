@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ragister New Member</title>
+    </head>
+    <body>
+        <form action="data.php">
+            <label for="Fullname">Full Name : </label>
+            <input type="text" name="Fname" id="Fullname"><br><br>
+
+            <label for="Email">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" name="email" id="Email"><br><br>
+
+            <label for="MobNo">Mobile No : </label>
+            <input type="number" name="Mno" id="MobNo"><br><br>
+
+            <label for="Gender">Gender : </label>
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Other">Female</label>
+            <input type="radio" name="Gender" id="Other" value="Other"><br><br>
+
+            <label for="Address">Address : </label>
+            <textarea name="Address" id="Address" cols="30" rows="3"></textarea><br><br>
+
+            <label>Designation : </label>
+            <select name="Designation" id="Post">
+                <option value="Pinciple">Principle</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Staff">Staff</option>
+            </select><br><br>
+
+            <label for="Department">Department : </label>
+            <select name="Department" id="Department">
+                <option value="Art">Art</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Science">Science</option>
+                <option value="Account">Account</option>
+            </select><br><br>
+
+            <input type="Submit">
+            <input type="Reset">
+            
+        </form>
+    </body>
+</html>
