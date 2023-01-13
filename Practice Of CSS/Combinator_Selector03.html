@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sibling Selectors</title>
+    </head>
+    <style>
+        /* 1.Adjucent Sibling */
+        section + p{
+            text-transform: uppercase;
+            color: chartreuse;
+        }
+        /* 2.General Sibling */
+        .Text ~ p{
+            text-decoration: dotted;
+            color: red;
+        }
+    </style>
+    <body>
+        <section>
+            <p>Demo Text 01</p>
+            <p>Demo Text 02</p>
+            <p>Demo Text 03</p>
+        </section>
+            <p>Demo Text 04</p>
+            <p>Demo Text 05</p>
+            <p>Demo Text 06</p>
+        <div class="Text">
+            <p>Demo Text 07</p>
+            <p>Demo Text 08</p>
+        </div>
+            <p>Demo Text 09</p>
+            <p>Demo Text 10</p>
+    </body>
+</html>
