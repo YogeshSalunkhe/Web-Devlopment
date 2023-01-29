@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Grow</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            margin: 0;
+            height: 99.2vh;
+            display: flex;
+            border: 2px solid red;
+        }
+        section>div{
+             margin: 5px;
+            border: 1px solid;
+        }
+        .Four{
+            background-color: aqua;
+            flex-grow: 2;
+        }
+        .One{
+            background-color: aquamarine;
+            flex-grow: 2;
+        }
+        .Two{
+            flex-grow: 1;
+            background-color: darkturquoise;
+        }
+        .Three{
+            flex-grow: 1;
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="One">1</div>
+        <div class="Two">2</div>
+        <div class="Three">3</div>
+        <div class="Four">4</div>
+    </section>
+</body>
+</html>
