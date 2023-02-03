@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE-FERN-RESTURENT</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            display: flex;
+            background: linear-gradient(yellow,hotpink);
+        }
+        header>div{
+            margin: 5px;
+            background: linear-gradient(skyblue,red);
+            flex-grow: 1;
+            padding: 10px;
+            text-align: center;
+        }
+        .Heading{
+            background:linear-gradient(blue,orange,yellow);
+            display: flex;
+        }
+        .Main{
+            background:linear-gradient(lightpink,lightcoral);
+            text-align: center;
+            width: 70%;
+            margin:5px;
+        }
+        .Con{
+            width: 30%;
+        }
+        .Sec{
+            text-align: center;
+            background:linear-gradient(lightblue,mistyrose);
+            margin:5px;
+        }
+        .Sec h3{
+            margin: 0;
+        }
+        #Five{
+            background:linear-gradient(lightsalmon,yellow);
+            display: flex;
+        }
+        #Five>div{
+            margin: 5px;
+            background:linear-gradient(hotpink,skyblue,yellowgreen);
+            flex-grow: 1;
+            text-align: center;
+        }
+        .Food{
+            background:linear-gradient(coral,lightblue,yellow);
+            display: flex;
+        }
+        .Pic{
+            flex-grow: 5;
+            padding: 5px;
+        }
+        .Text{
+            width: 400px;
+            padding: 0px 120px;
+        }
+        .Text h3{
+            background:linear-gradient(lightpink,orange);
+            display: inline;
+            padding: 10px;
+        }
+        .Bottom{
+            display: flex;
+            padding: 10px;
+            background: linear-gradient(skyblue,yellow);
+        }
+        .Bottom>.Head{
+            flex-grow: 1;
+            height: 10px;
+            background:linear-gradient(lightsalmon,blue);
+        }
+        .Heads{
+            width: 200px;
+            text-align: center;
+        }
+        .Heads h2{
+            font-size: 20px;
+            margin: 0;
+        }
+        .Foods{
+            background: linear-gradient(orange,yellow,skyblue);
+            display: grid;
+            padding: 5px 10px 5px 10px;
+        }
+        .Foods>div{
+            display: grid;
+            margin: 5px;
+            width: 400px;
+        }
+        .Part1{
+            grid-column-end: 2;
+        }
+        .Part2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .Part3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        footer{
+            background:linear-gradient(to bottom right,hotpink,yellow,skyblue);
+            display: flex;
+        }
+        .Items{
+            padding: 20px;
+        }
+        .Img{
+            text-align: right;
+            width: 93%;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="Nav">Tacos</div>
+            <div class="Nav">Beers</div>
+            <div class="Nav">Wines</div>
+            <div class="Nav">Deserts</div>
+            <div class="Nav">Reservation</div>
+        </header>
+        <section class="Heading">
+            <div class="Main">
+                <h1>HAPPY-RESTURENT</h1>
+                <h3>Foodes With Emotions</h3>
+            </div>
+            <div class="Con">
+                <div class="Sec">
+                    <h3>&dollar;1.99</h3>
+                    <p>Taxes</p>
+                </div>
+                <div class="Sec">
+                    <h3>&dollar;1.99</h3>
+                    <p>Taxes</p>
+                </div>
+            </div>
+        </section>
+        <section id="Five">
+            <div class="Items">
+                <h2>Tacos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. delectus nam nihil dolorem harum fugiat unde,
+                    inventore, deserunt nulla assumenda aliquid exercitationem nobis ut aut.</p>
+            </div>
+            <div class="Items">
+                <h2>Beer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. delectus nam nihil dolorem harum fugiat unde,
+                    inventore, deserunt nulla assumenda aliquid exercitationem nobis ut aut.</p>
+            </div>
+            <div class="Items">
+                <h2>Wine</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. delectus nam nihil dolorem harum fugiat unde,
+                    inventore, deserunt nulla assumenda aliquid exercitationem nobis ut aut.</p>
+            </div>
+            <div class="Items">
+                <h2>Pizaa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. delectus nam nihil dolorem harum fugiat unde,
+                    inventore, deserunt nulla assumenda aliquid exercitationem nobis ut aut.</p>
+            </div>
+            <div class="Items">
+                <h2>Burger</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. delectus nam nihil dolorem harum fugiat unde,
+                    inventore, deserunt nulla assumenda aliquid exercitationem nobis ut aut.</p>
+            </div>
+        </section>
+        <div class="Food">
+            <div class="Pic">
+                <img src="Burgur.avif" alt="Burger Image" height="200px" width="700px">
+            </div>
+            <div class="Text">
+                <h2>Burgur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, corrupti itaque harum repudiandae,
+                    cumque nesciunt praesentium esse a aliquam, commodi iste. Vitae distinctio deserunt aliquam et officia
+                    id dolor nulla.</p>
+                    <h3>Learn More</h3>
+            </div>
+        </div>
+        <div class="Bottom">
+            <div class="Head"><hr></div>
+            <div class="Heads">
+                <h2>Instant Games</h2>
+            </div>
+            <div class="Head"><hr></div>
+        </div>
+        <div class="Foods">
+            <div class="Part1">
+                <img src="Pizaa.jpg" alt="Pizza Image" height="150px" width="413px">
+            </div>
+            <div class="Part2">
+                <img src="Pizaa.jpg" alt="Pizza Image" height="150px" width="413px">
+            </div>
+            <div class="Part3">
+                <img src="Pizaa.jpg" alt="Pizza Image" height="150px" width="413px">
+            </div>
+            <div class="Part4">
+                <img src="Pizaa.jpg" alt="Pizza Image" height="150px" width="413px">
+            </div>
+            <div class="Part5">
+                <img src="Pizaa.jpg" alt="Pizza Image" height="150px" width="413px">
+            </div>
+        </div>
+    <footer>
+        <div class="Items">
+            <h4>Tacos</h4>
+            <h4>Beers</h4>
+            <h4>Deserts</h4>
+            <h4>Reservation</h4>
+        </div>
+        <div class="Img">
+            <img src="Burgur.avif" alt="Burger" height="110px" width="200px">
+        </div>
+    </footer>
+    
+</body>
+</html>
