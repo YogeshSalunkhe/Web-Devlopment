@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style-Conference</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        header{
+            background-image: url(Backgrond.jpg);
+            color:whitesmoke
+        }
+        .Head{
+            display: flex;
+        }
+        .Head>.Heading{
+            padding-left: 200px;
+            font-size: 25px;
+            width: 60%;
+        }
+        .Head>.Time{
+            font-size: 20px;
+            padding-top: 60px;
+            width: 40%;
+        }
+        .Time>div{
+            display: inline;
+        }
+        .Dis{
+            font-size: 18px;
+            width: 60%;
+            padding:1% 20%;
+            text-align: center;
+        }
+        .Dis h3{
+            color: red;
+            display: inline;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        #Main{
+            display: flex;
+            background-color: lightblue;
+        }
+        #Main>div{
+            background-color: skyblue;
+            text-align: center;
+            width: 32%;
+            margin:0% 1%;
+        }
+        footer{
+            background-color: cornflowerblue;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
+        footer>.Name{
+            flex-grow: 10;
+        }
+        footer>.Item{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="Head">
+            <div class="Heading">
+                <h1>Styles</h1>
+                <h1>Conference</h1>
+            </div>
+            <section class="Time">
+                <h3>23/2/2023 09:00AM TO 04:00PM</h3>
+                <div class="Menu">Home</div>
+                <div class="Menu">About Us</div>
+                <div class="Menu">Contact Us</div>
+                <div class="Menu">Carrer</div>
+            </section>
+        </section>
+        <div class="Dis">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias officiis, suscipit corrupti minima
+                ipsum optio fugiat voluptas id aperiam voluptatibus cumque? Ipsum magnam repellat porro cumque illo,
+                vitae natus.ipsum optio fugiat voluptas id aperiam voluptatibus cumque? </p>
+                <h3>Register Now</h3>
+        </div>
+    </header>
+    <section id="Main">
+        <div class="Roll">
+            <h2>Speakers</h2>
+            <img src="Speakers.jpg" height="150px" width="300px">
+            <h4>World Class Speakers</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias officiis, suscipit corrupti minima
+                ipsum optio fugiat voluptas id aperiam voluptatibus cumque? Ipsum magnam repellat porro cumque illo,
+                vitae natus.ipsum optio fugiat voluptas id aperiam voluptatibus cumque? </p>
+        </div>
+        <div class="Roll">
+            <h2>Schedule</h2>
+            <img src="Schedule.jpg" alt="" height="150px" width="300px">
+            <h4>Three Inspiring Days</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias officiis, suscipit corrupti minima
+                ipsum optio fugiat voluptas id aperiam voluptatibus cumque? Ipsum magnam repellat porro cumque illo,
+                vitae natus.ipsum optio fugiat voluptas id aperiam voluptatibus cumque? </p>
+        </div>
+        <div class="Roll">
+            <h2>Venue</h2>
+            <img src="Venue.jpg" alt="" height="150px" width="300px">
+            <h4>The Venue</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias officiis, suscipit corrupti minima
+                ipsum optio fugiat voluptas id aperiam voluptatibus cumque? Ipsum magnam repellat porro cumque illo,
+                vitae natus.ipsum optio fugiat voluptas id aperiam voluptatibus cumque? .</p>
+        </div>
+    </section>
+    <footer>
+        <div class="Name"><h4>Style Conference</h4></div>
+        <div class="Item">Home</div>
+        <div class="Item">About Us</div>
+        <div class="Item">Carrer</div>
+        <div class="Item">Contact Us</div>
+    </footer>
+</body>
+</html>
