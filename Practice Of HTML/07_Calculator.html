@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .Container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:white;
+        }
+        .Calc{
+            padding: 30px 10px 10px 10px;
+            background-color:#F3FFFF ;
+            /* background: linear-gradient(hotpink,blue); */
+            border-radius: 30px;
+            box-shadow: 6px 6px 5px 6px skyblue;
+        }
+        
+        .Calc button{
+            width:70px;
+            height: 50px;
+            margin: 5px 2px;
+            font-size: 25px;
+            border-radius: 30px;
+            border: none;
+            background-color:#F3FFFF;
+            box-shadow: 5px 2px 3px 3px skyblue ;
+            /* background: linear-gradient( to top right,aqua,orange); */
+        }
+        .Display{
+            margin-bottom: 15px;
+            text-align: right;
+            font-size: 50px;
+            height: 50px;
+            width: 305px;
+            border-radius: 20px;
+            border: none;
+            /* 
+            background-color:rgba(rgb(241, 229, 229), rgb(248, 250, 248), rgb(246, 246, 253)); */
+            background-color: #FFFCFF;
+            box-shadow:inset 5px 5px 6px whitesmoke ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Calc">
+            <div>
+                <input type="text" placeholder="0" class="Display" id="output">
+            </div>
+            <div>
+                <button onclick="Clear()">AC</button>
+                <button onclick="del()">C</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="display('/')">/</button>
+            </div>
+            <div>
+                <button onclick="dispaly('7')">7</button>
+                <button onclick="dispaly('8')">8</button>
+                <button onclick="dispaly('9')">9</button>
+                <button onclick="dispaly('*')">*</button>
+            </div>
+            <div>
+                <button onclick="dispaly('4')">4</button>
+                <button onclick="dispaly('5')">5</button>
+                <button onclick="dispaly('6')">6</button>
+                <button onclick="dispaly('-')">-</button>
+            </div>
+            <div>
+                <button onclick="dispaly('1')">1</button>
+                <button onclick="dispaly('2')">2</button>
+                <button onclick="dispaly('3')">3</button>
+                <button onclick="dispaly('+')">+</button>
+            </div>
+            <div>
+                <button onclick="dispaly('00')">00</button>
+                <button onclick="dispaly('0')">0</button>
+                <button onclick="dispaly('%')">%</button>
+                <button onclick="calculate()" id="Equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let outputscreen = document.getElementById("output");
+
+        function dispaly(num){
+            outputscreen.value += num;
+        }
+        function calculate(){
+            try{
+                outputscreen.value = eval(outputscreen.value);
+            }
+            catch(err)
+            {
+                alert("Inavalid");
+            }
+        }
+        function Clear(){
+            outputscreen.value = "";
+        }
+        function del(){
+            outputscreen.value = outputscreen.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>
