@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .content{
+            position: absolute;
+            left: 17%;
+            top: 33%;
+            font-size: 300%;
+            font-style: italic;
+            color:rgb(255, 252, 61);
+        }
+        span{
+            background: url(https://cdn2.iconfinder.com/data/icons/lin/128/14.png);
+            width: 100px;
+            height: 100px;
+            position:absolute;
+            background-size: cover;
+            pointer-events: none;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%;
+            animation: animation 30s linear;
+        }
+
+        @keyframes animation{
+            0%{
+                transform: translate(-50%,-50%);
+                opacity: 1;
+                filter: hue-rotate(0);
+            }
+            100%{
+                transform: translate(-50%,6000%);
+                opacity: 0;
+                filter: hue-rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>HAPPY BIRTHDAY RADHA</h2>
+    </div>
+   <script>
+
+    const boldElement = document.querySelector("body");
+
+    boldElement.addEventListener("mousemove",(event) => {
+        const xPosition = event.offsetX;
+        const yPosition = event.offsetY;
+        const spanElement = document.createElement("span");
+
+        spanElement.style.left = xPosition + "px";
+        spanElement.style.top = yPosition + "px";
+
+        const size = Math.random() * 100;
+        spanElement.style.width = size + "px";
+        spanElement.style.height = size + "px";
+
+        boldElement.appendChild(spanElement);
+
+        setTimeout(() => {
+            spanElement.remove()
+        },8000)
+
+    })
+   </script> 
+</body>
+</html>
